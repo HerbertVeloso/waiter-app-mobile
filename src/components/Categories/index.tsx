@@ -1,11 +1,19 @@
 import { useState } from 'react';
 import { FlatList } from 'react-native';
-import { categories } from '../../mocks/categories';
+import { categories as mockCategories } from '../../mocks/categories';
 import { Text } from '../Text';
 import { Category, Icon } from './styles';
 
+interface Category {
+  _id: string;
+  name: string;
+  icon: string;
+}
+
 export function Categories() {
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [categories] = useState<Category[]>(mockCategories);
+
 
   function handleSelectCategory(categoryId: string) {
     const category = selectedCategory === categoryId ? '' : categoryId;
@@ -18,7 +26,7 @@ export function Categories() {
       showsHorizontalScrollIndicator={false}
       data={categories}
       contentContainerStyle={{ paddingRight: 24 }}
-      keyExtactor={category => category._id}
+      keyExtractor={category => category._id}
       renderItem={({ item: category }) => {
         const isSelected = selectedCategory === category._id;
 

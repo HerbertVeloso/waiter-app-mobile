@@ -25,6 +25,36 @@ export const products = [
         name: 'Brie',
         icon: '🧀',
         _id: '637521b710cb4898a003a4a6'
+      },
+      {
+        name: 'Gouda',
+        icon: '🧀',
+        _id: 'gregregregrgre'
+      },
+      {
+        name: 'Brie',
+        icon: '🧀',
+        _id: 'gdfgdfgfd'
+      },
+      {
+        name: 'Gouda',
+        icon: '🧀',
+        _id: 'dgfgfdgfdgfdg'
+      },
+      {
+        name: 'Brie',
+        icon: '🧀',
+        _id: 'dgfgfdgfd'
+      },
+      {
+        name: 'Gouda',
+        icon: '🧀',
+        _id: '637521b710cb4dfggfdgfdgf898a003a4a5'
+      },
+      {
+        name: 'Ultimo',
+        icon: '🧀',
+        _id: 'sdffdsfdsfdsfds'
       }
     ],
     category: '6372d5a799e46ea15cb66266',

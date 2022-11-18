@@ -1,9 +1,6 @@
-import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 
-const isAndroid = Platform.OS === 'android';
-
-export const Product = styled.TouchableOpacity`
+export const ProductContainer = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
 `;
